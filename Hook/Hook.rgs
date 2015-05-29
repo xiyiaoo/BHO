@@ -1,0 +1,17 @@
+HKLM {
+	NoRemove SOFTWARE {
+		NoRemove Microsoft {
+			NoRemove Windows {
+				NoRemove CurrentVersion {
+					NoRomove Explorer {
+						NoRemove 'Browser Helper Objects' {
+							ForceRemove '{A39CCA2B-1813-48EA-BA0F-D985A88A2924}' = s 'HookBHO' {
+								val 'NoExplorer' = d '1'
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

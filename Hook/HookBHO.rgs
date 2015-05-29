@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {A39CCA2B-1813-48EA-BA0F-D985A88A2924} = s 'HookBHO Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EA6A137C-C398-447E-A2C2-6F01D6FD8925}'
+			Version = s '1.0'
+		}
+	}
+}

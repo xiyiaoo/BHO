@@ -1,0 +1,34 @@
+// Hook.idl : IDL source for Hook
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Hook.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(B06251C9-362B-48A1-8442-AD8C17442D28),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHookBHO : IDispatch{
+};
+[
+	uuid(EA6A137C-C398-447E-A2C2-6F01D6FD8925),
+	version(1.0),
+]
+library HookLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(A39CCA2B-1813-48EA-BA0F-D985A88A2924)		
+	]
+	coclass HookBHO
+	{
+		[default] interface IHookBHO;
+	};
+};
+

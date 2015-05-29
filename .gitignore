@@ -14,6 +14,10 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+*.sdf
+*.ipch
+BHO.opensdf
+
 # Windows shortcuts
 *.lnk
 
